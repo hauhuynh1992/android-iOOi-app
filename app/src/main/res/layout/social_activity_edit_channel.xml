@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/social_colorPrimaryDark"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/social_colorPrimary"
+        app:title="@string/social_edit_channel"
+        app:titleTextColor="@color/social_white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_16sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_avatar"
+                android:layout_width="@dimen/_46sdp"
+                android:layout_height="@dimen/_46sdp"
+                android:layout_centerVertical="true"
+                android:visibility="visible"
+                app:cardCornerRadius="@dimen/_23sdp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_default_avatar"
+                    android:visibility="visible" />
+
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_toRightOf="@+id/cv_avatar"
+                android:background="@drawable/bg_button_gray"
+                android:hint="@string/pd_hint_create_group"
+                android:paddingLeft="@dimen/_12sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingRight="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_6sdp"
+                android:textColor="@color/social_black"
+                android:textColorHint="@color/social_textColorSecondary" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/btnPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_add_user"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/social_textColorPrimary"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp"
+            android:text="@string/social_txt_set_photo"
+            android:textColor="@color/social_textColorPrimary"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@color/colorGrey" />
+
+        <EditText
+            android:id="@+id/edt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_toRightOf="@+id/icCamera"
+            android:background="@color/pd_transparent"
+            android:hint="@string/social_txt_description"
+            android:maxLines="3"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColorHint="@color/social_textColorSecondary"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnActionClock"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/bg_green_cirle"
+        android:backgroundTint="@color/social_white"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_lock"
+            app:tint="@color/social_black" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

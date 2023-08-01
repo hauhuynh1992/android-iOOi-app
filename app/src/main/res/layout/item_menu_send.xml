@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_45sdp"
+    android:layout_height="@dimen/_45sdp"
+    android:padding="@dimen/_6sdp">
+
+    <RelativeLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bg_menu_gallery"
+        android:backgroundTint="@color/social_black">
+
+        <ImageView
+            android:id="@+id/imgSend"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/socialic_send_black"
+            app:tint="@color/social_white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvUnRead"
+        android:layout_width="@dimen/_14sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_dry_clean"
+        android:gravity="center"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/social_white"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

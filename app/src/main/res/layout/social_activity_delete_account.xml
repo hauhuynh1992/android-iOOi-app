@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/social_app_background"
+    android:orientation="vertical"
+    tools:context=".ui.deleteAccount.DeleteAccountActivity">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_14sdp"
+        android:paddingTop="@dimen/Social_spacing_standard"
+        android:background="@drawable/social_bottom_shadow">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="@dimen/_34sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:src="@drawable/social_ic_keyboard_arrow_left"
+            android:layout_marginStart="@dimen/Social_spacing_standard_new"
+            android:padding="@dimen/Social_spacing_control"
+            android:background="@drawable/social_bg_primary_corner"
+            app:tint="@color/social_white" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/social_lbl_delete_account"
+            android:textAppearance="@style/SocialFontBold"
+            android:textColor="@color/social_textColorPrimary"
+            android:textSize="@dimen/Social_font_size_large" />
+
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/SocialCard"
+                android:layout_marginBottom="@dimen/Social_spacing_control_half"
+                android:orientation="vertical"
+                android:padding="@dimen/Social_spacing_standard_new">
+
+
+                <ImageView
+                    android:id="@+id/ivDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/social_ic_danger"
+                    app:tint="@color/social_form_google" />
+
+                <TextView
+                    android:id="@+id/tvLbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                    android:layout_toEndOf="@id/ivDelete"
+                    android:text="@string/social_lbl_deleting_your_account_will"
+                    android:textColor="@color/social_form_google"
+                    android:textSize="@dimen/Social_font_size_medium" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLbl"
+                    android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                    android:layout_toEndOf="@id/ivDelete"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SocialSubTitle"
+                        android:layout_marginTop="@dimen/Social_spacing_control"
+                        android:drawableStart="@drawable/social_bg_black_dot"
+                        android:drawablePadding="@dimen/Social_spacing_standard"
+                        android:singleLine="false"
+                        android:text="@string/social_lbl_delete1" />
+
+                    <TextView
+                        style="@style/SocialSubTitle"
+                        android:drawableStart="@drawable/social_bg_black_dot"
+                        android:drawablePadding="@dimen/Social_spacing_standard"
+                        android:singleLine="false"
+                        android:text="@string/social_lbl_delete2" />
+
+                    <TextView
+                        style="@style/SocialSubTitle"
+                        android:drawableStart="@drawable/social_bg_black_dot"
+                        android:drawablePadding="@dimen/Social_spacing_standard"
+                        android:singleLine="false"
+                        android:text="@string/social_lbl_delete3" />
+
+                    <TextView
+                        style="@style/SocialSubTitle"
+                        android:drawableStart="@drawable/social_bg_black_dot"
+                        android:drawablePadding="@dimen/Social_spacing_standard"
+                        android:singleLine="false"
+                        android:text="@string/social_lbl_delete4" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/SocialCard"
+                android:layout_marginTop="@dimen/Social_spacing_control"
+                android:layout_marginBottom="@dimen/Social_spacing_control"
+                android:orientation="vertical"
+                android:padding="@dimen/Social_spacing_standard_new">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/social_ic_smartphone"
+                    android:drawablePadding="@dimen/Social_spacing_standard"
+                    android:drawableTint="@color/social_colorAccent"
+                    android:text="@string/social_lbl_change_phone_number_instead"
+                    android:textColor="@color/social_colorAccent"
+                    android:textSize="@dimen/Social_font_size_medium" />
+                <TextView
+                    android:id="@+id/btnChangeNumber"
+                    style="@style/SocialBtnCustom"
+                    android:layout_marginTop="@dimen/Social_spacing_middle"
+                    android:text="@string/social_lbl_change_number"
+                    android:paddingTop="@dimen/Social_spacing_middle"
+                    android:paddingBottom="@dimen/Social_spacing_middle"
+                    android:drawableEnd="@drawable/social_forward"
+                    android:drawableTint="@color/social_white"
+                    android:drawablePadding="@dimen/Social_spacing_standard"/>
+            </LinearLayout>
+            <LinearLayout
+                style="@style/SocialCard"
+                android:layout_marginTop="@dimen/Social_spacing_control_half"
+                android:orientation="vertical"
+                android:padding="@dimen/Social_spacing_standard_new">
+
+                <TextView
+                    style="@style/SocialSubTitle"
+                    android:singleLine="false"
+                    android:text="@string/social_lbl_to_delete_your_account_confirm_your_country_code_and_enter_your_phone_number" />
+
+                <TextView
+                    style="@style/SocialHeading"
+                    android:layout_marginTop="@dimen/Social_spacing_standard_new"
+                    android:text="@string/social_lbl_country" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/Social_spacing_standard_new"
+                    android:paddingEnd="@dimen/Social_spacing_standard"
+                    android:layout_marginTop="@dimen/Social_spacing_standard"
+                    android:background="@drawable/social_bg_stroke">
+
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/social_ic_internet"/>
+                    <com.hbb20.CountryCodePicker
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_6sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:gravity="center_vertical"
+                        app:ccp_contentColor="@color/social_textColorPrimary"
+                        app:ccp_showFlag="false"
+                        app:ccp_showNameCode="true"
+                        app:ccp_showPhoneCode="false" />
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/SocialStrokeText"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:drawableStart="@drawable/social_ic_call"
+                    android:text="@string/social_phone" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginBottom="@dimen/Social_spacing_standard_new"
+                android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                android:layout_marginEnd="@dimen/Social_spacing_standard_new"
+                android:layout_marginTop="@dimen/Social_spacing_large"
+                android:paddingStart="@dimen/Social_spacing_standard_new"
+                android:paddingEnd="@dimen/Social_spacing_standard_new"
+                android:paddingTop="@dimen/_14sdp"
+                android:paddingBottom="@dimen/_14sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/Social_font_size_medium"
+                android:layout_width="match_parent"
+                android:textColor="@color/social_white"
+                android:text="@string/social_lbl_delete_account"
+                android:background="@drawable/social_bg_primary_corner"
+                android:backgroundTint="@color/social_form_google"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

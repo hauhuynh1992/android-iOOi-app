@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SocialCircleImageView">
+        <attr name="name" format="string" />
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="SocialDotsIndicator">
+        <attr name="dot_width" format="dimension" />
+        <attr name="dot_height" format="dimension" />
+        <attr name="dot_margin" format="dimension" />
+
+        <attr name="dot_drawable" format="reference" />
+        <attr name="dot_drawable_unselected" format="reference" />
+        <attr name="dot_tint" format="color" />
+
+        <attr name="dots_animator" format="reference" />
+        <attr name="dots_animator_reverse" format="reference" />
+
+        <attr name="Social_dots_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+
+        <attr name="Social_dots_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CollapsingImageBehavior">
+        <attr name="collapsedTarget" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="WaveformView">
+        <attr name="mode" format="enum">
+            <enum name="RECORDING" value="1" />
+            <enum name="PLAYBACK" value="2" />
+        </attr>
+        <attr name="waveformStrokeThickness" format="float" />
+        <attr name="waveformColor" format="color" />
+        <attr name="waveformFillColor" format="color" />
+        <attr name="playbackIndicatorColor" format="color" />
+        <attr name="timecodeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="trimExpandedText" format="string" />
+        <attr name="trimCollapsedText" format="string" />
+        <attr name="trimLength" format="integer" />
+        <attr name="showTrimExpandedText" format="boolean" />
+        <attr name="colorClickableText" format="color" />
+        <attr name="trimLines" format="integer" />
+        <attr name="trimMode">
+            <enum name="trimModeLine" value="0"/>
+            <enum name="trimModeLength" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

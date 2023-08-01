@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners
+        android:radius="@dimen/pd_corner_topRightRadius"/>
+    <solid android:color="@color/pd_switch_track" />
+</shape>

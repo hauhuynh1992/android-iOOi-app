@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/social_white">
+
+
+    <RelativeLayout
+        android:id="@+id/imgDoc"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:background="@drawable/ic_icons8_file"
+        android:backgroundTint="@color/Theme3_color_red">
+
+        <TextView
+            android:id="@+id/tvDoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="PDF"
+            android:textColor="@color/pd_color_white"
+            android:textSize="@dimen/_6sdp" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_toRightOf="@+id/imgDoc"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="dfakdfhdk.pdf"
+            android:textColor="@color/social_black"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/txtSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="20MB"
+            android:textColor="@color/social_textColorSecondary"
+            android:textSize="@dimen/_8sdp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCheck"
+        android:layout_width="@dimen/_12sdp"
+        android:layout_height="@dimen/_12sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:src="@drawable/ic_check_cirle" />
+
+</RelativeLayout>

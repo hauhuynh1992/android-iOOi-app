@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/social_colorPrimary"
+            app:title="Home"
+            app:titleTextColor="@color/social_white">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_gravity="center"
+            android:background="@color/social_colorSecondary"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <!-- Adding 15 rows of placeholders -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+
+                <include layout="@layout/shimmer_placeholder_layout" />
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/social_colorPrimaryDark"
+            android:layoutAnimation="@anim/social_layout_animation"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/btnActionClock"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@drawable/bg_green_cirle"
+            android:backgroundTint="@color/social_white"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_lock"
+                app:tint="@color/social_black" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

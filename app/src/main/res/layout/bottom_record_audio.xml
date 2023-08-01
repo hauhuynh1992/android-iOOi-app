@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.phillip.chapApp.utils.custom.waveform.RecorderVisualizerView
+        android:id="@+id/visualizer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/bg_message_dialog"
+        app:mode="RECORDING"/>
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waveformView"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:text="@string/btn_record_done"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLabel"/>
+</FrameLayout>

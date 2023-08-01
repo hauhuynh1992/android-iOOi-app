@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="@color/pd_view_pager_1"
+        android:endColor="@color/pd_view_pager_2"
+        android:angle="270"
+        />
+
+    <corners
+        android:bottomLeftRadius="@dimen/_30sdp"
+        android:bottomRightRadius="@dimen/_30sdp"/>
+
+
+
+</shape>

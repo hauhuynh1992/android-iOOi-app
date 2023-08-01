@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/social_transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_38sdp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="@dimen/Social_spacing_control_half"
+        android:background="@color/social_white"
+        app:cardCornerRadius="@dimen/Social_spacing_middle">
+
+        <TextView
+            android:paddingStart="@dimen/Social_spacing_large"
+            android:paddingEnd="@dimen/Social_spacing_large"
+            android:paddingTop="@dimen/Social_spacing_standard"
+            android:paddingBottom="@dimen/Social_spacing_standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/social_reset_settings"
+            android:textColor="@color/social_textColorPrimary"
+            android:textSize="@dimen/Social_font_size_medium"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

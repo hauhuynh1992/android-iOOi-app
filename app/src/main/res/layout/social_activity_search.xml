@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/social_white"
+    android:orientation="vertical"
+    tools:context=".ui.chatUser.ChatUSerActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/social_colorPrimary">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="@dimen/_6sdp"
+            app:closeIcon="@drawable/social_ic_close"
+            app:searchIcon="@drawable/ic_magnifying_glass"
+            app:theme="@style/SearchViewStyle" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/social_colorSecondary"
+        android:visibility="gone"
+        app:tabGravity="start"
+        app:tabMaxWidth="0dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/social_colorAccent"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/social_textColorPrimary" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/vb_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_search"
+        android:background="@color/social_colorPrimaryDark" />
+
+
+    <RelativeLayout
+        android:id="@+id/btnActionClock"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/bg_green_cirle"
+        android:backgroundTint="@color/social_white"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_lock"
+            app:tint="@color/social_black" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="@color/social_app_background"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvSeeMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/social_lbl_see_more"
+        android:textColor="@color/social_colorPrimary"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/Social_font_size_medium"
+        android:background="@drawable/social_stroke"
+        android:paddingStart="@dimen/Social_spacing_standard"
+        android:paddingEnd="@dimen/Social_spacing_standard"
+        android:paddingTop="@dimen/Social_spacing_control"
+        android:layout_marginStart="@dimen/Social_spacing_standard_new"
+        android:paddingBottom="@dimen/Social_spacing_control"
+        android:drawablePadding="@dimen/Social_spacing_control"
+        android:drawableEnd="@drawable/social_ic_keyboard_arrow_right"
+        android:drawableTint="@color/social_colorPrimary"/>
+</RelativeLayout>

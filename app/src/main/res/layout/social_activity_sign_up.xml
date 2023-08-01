@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/social_colorPrimary"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/llMain"
+        android:layout_alignBottom="@id/llMain"
+        android:layout_marginStart="-150dp"
+        android:layout_marginEnd="-150dp" />
+
+    <ScrollView
+        android:id="@+id/llMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/Theme1_spacing_standard_new"
+            android:paddingTop="@dimen/_50sdp"
+            android:paddingEnd="@dimen/Theme1_spacing_standard_new"
+            android:paddingBottom="@dimen/_40sdp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="@dimen/_50sdp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_20sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_logo"
+                    android:visibility="visible" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:text="@string/theme1_lbl_sign_up"
+                    android:textAppearance="@style/SocialFontBold"
+                    android:textColor="@color/pd_color_white"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtName"
+                style="@style/Theme1EditTextStyle_rounded"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:hint="@string/social_full_name" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/Theme1EditTextStyle_rounded"
+                android:layout_marginTop="@dimen/Theme1_spacing_standard_new"
+                android:hint="@string/pd_email_address"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/Theme1EditTextStyle_rounded"
+                android:layout_marginTop="@dimen/Theme1_spacing_standard_new"
+                android:hint="@string/theme1_hint_password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edtConfirmPassword"
+                style="@style/Theme1EditTextStyle_rounded"
+                android:layout_marginTop="@dimen/Theme1_spacing_standard_new"
+                android:hint="@string/social_confirm_password"
+                android:inputType="textPassword" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                style="@style/Theme1MaterialButtonStyle"
+                android:layout_marginStart="@dimen/Theme1_spacing_standard_new"
+                android:layout_marginTop="@dimen/Theme1_spacing_standard"
+                android:layout_marginEnd="@dimen/Theme1_spacing_standard_new"
+                android:backgroundTint="@color/social_colorAccent"
+                android:elevation="@dimen/Theme1_spacing_middle"
+                android:text="@string/theme1_lbl_sign_up"
+                android:textAppearance="@style/SocialFontBold"
+                android:textColor="@color/pd_color_white"
+                android:textSize="@dimen/Theme1_font_size_normal"
+                app:cornerRadius="@dimen/_32sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/Theme1_spacing_standard"
+                    android:text="@string/theme1_lbl_have_account"
+                    android:textColor="@color/Theme1_textColorSecondary" />
+
+                <TextView
+                    android:id="@+id/btnSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/Theme1_spacing_standard"
+                    android:text="@string/theme1_lbl_sign_in"
+                    android:textColor="@color/social_white" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

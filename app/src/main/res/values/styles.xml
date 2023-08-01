@@ -1,0 +1,601 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="SocialAppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/social_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/social_colorPrimaryDark</item>
+        <item name="colorAccent">@color/social_colorAccent</item>
+        <item name="android:statusBarColor">@color/social_colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowSoftInputMode">adjustResize|stateVisible</item>
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_dialog</item>
+    </style>
+
+    <style name="SocialFontMedium">
+        <item name="fontPath">@string/social_font_medium</item>
+    </style>
+
+    <style name="SocialFontBold">
+        <item name="fontPath">@string/social_font_bold</item>
+    </style>
+
+    <style name="SocialFontRegular">
+        <item name="fontPath">@string/social_font_regular</item>
+    </style>
+
+    <style name="SocialAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="SocialAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SocialMaterialButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/Social_font_size_medium</item>
+        <item name="android:paddingTop">@dimen/_12sdp</item>
+        <item name="android:paddingBottom">@dimen/_12sdp</item>
+        <item name="android:paddingStart">@dimen/Social_spacing_standard</item>
+        <item name="android:paddingEnd">@dimen/Social_spacing_standard</item>
+        <item name="android:theme">@style/Theme.MaterialComponents.Light</item>
+        <item name="cornerRadius">@dimen/Social_spacing_middle</item>
+        <item name="fontPath">@string/social_font_medium</item>
+    </style>
+
+    <style name="SocialMaterialButtonStyle.Filled">
+        <item name="backgroundTint">@color/social_colorAccent</item>
+        <item name="android:textColor">@color/social_white</item>
+        <item name="rippleColor">@color/social_white</item>
+    </style>
+
+    <style name="SocialMaterialButtonStyle.Stroked">
+        <item name="backgroundTint">@color/social_white</item>
+        <item name="strokeColor">@color/social_colorPrimary</item>
+        <item name="strokeWidth">@dimen/_1sdp</item>
+        <item name="android:textColor">@color/social_colorPrimary</item>
+    </style>
+
+    <style name="SocialHeading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textColor">@color/social_textColorPrimary</item>
+        <item name="android:textSize">@dimen/Social_font_size_medium</item>
+        <item name="fontPath">@string/social_font_medium</item>
+    </style>
+
+    <style name="SocialCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/_12sdp</item>
+        <item name="android:layout_marginTop">@dimen/Social_spacing_standard</item>
+        <item name="android:layout_marginEnd">@dimen/_12sdp</item>
+        <item name="android:layout_marginBottom">@dimen/Social_spacing_standard</item>
+        <item name="android:background">@drawable/social_bg_shadow</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+    </style>
+
+    <style name="SocialRecycleView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:overScrollMode">never</item>
+    </style>
+
+    <style name="SocialIconCard">
+        <item name="android:layout_width">@dimen/_45sdp</item>
+        <item name="android:layout_height">@dimen/_45sdp</item>
+        <item name="android:background">@drawable/social_app_bg_rectangle</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:tint">@color/social_white</item>
+    </style>
+
+    <style name="SocialTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/social_textColorPrimary</item>
+        <item name="android:textSize">@dimen/Social_font_size_medium</item>
+        <item name="fontPath">@string/social_font_medium</item>
+    </style>
+
+    <style name="SocialSubTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/social_textColorSecondary</item>
+        <item name="android:textSize">@dimen/Social_font_size_medium</item>
+    </style>
+
+    <style name="SocialOptionLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginStart">@dimen/Social_spacing_middle</item>
+        <item name="android:layout_marginEnd">@dimen/Social_spacing_standard</item>
+    </style>
+
+    <style name="SocialStrokeText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/social_bg_stroke</item>
+        <item name="android:layout_marginStart">@dimen/Social_spacing_standard_new</item>
+        <item name="android:layout_marginEnd">@dimen/Social_spacing_standard_new</item>
+        <item name="android:layout_marginTop">@dimen/Social_spacing_standard_new</item>
+        <item name="android:paddingStart">@dimen/Social_spacing_standard_new</item>
+        <item name="android:paddingEnd">@dimen/Social_spacing_standard_new</item>
+        <item name="android:paddingTop">@dimen/_14sdp</item>
+        <item name="android:paddingBottom">@dimen/_14sdp</item>
+        <item name="android:textColor">@color/social_textColorPrimary</item>
+        <item name="android:textSize">@dimen/Social_font_size_medium</item>
+        <item name="android:drawablePadding">@dimen/Social_spacing_standard</item>
+    </style>
+
+    <style name="SocialBtnCustom">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/Social_spacing_standard_new</item>
+        <item name="android:background">@drawable/social_bg_primary_corner</item>
+        <item name="android:backgroundTint">@color/social_colorAccent</item>
+        <item name="android:paddingStart">@dimen/Social_spacing_large</item>
+        <item name="android:paddingTop">@dimen/_14sdp</item>
+        <item name="android:paddingEnd">@dimen/Social_spacing_large</item>
+        <item name="android:paddingBottom">@dimen/_14sdp</item>
+        <item name="android:textAppearance">@style/SocialFontMedium</item>
+        <item name="android:textColor">@color/social_white</item>
+        <item name="android:textSize">@dimen/Social_font_size_medium</item>
+    </style>
+
+
+    // Doctor
+
+    <style name="pd_statusbar_color" parent="Theme.AppCompat">
+        <item name="android:statusBarColor">@color/pd_color_white</item>
+    </style>
+
+    <style name="pd_btn">
+        <item name="android:padding">@dimen/pd_padding_final</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/pd_layout_marginTop</item>
+        <item name="android:layout_marginStart">@dimen/pd_layout_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/pd_layout_marginEnd</item>
+        <item name="background">@drawable/pd_btn_sign_in_bg</item>
+        <item name="android:textSize">@dimen/pd_font_size_medium</item>
+        <item name="android:textColor">@color/pd_color_white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="pd_btn_layout">
+        <item name="android:layout_marginTop">@dimen/pd_spacing_standard_new</item>
+        <item name="android:layout_marginStart">@dimen/pd_layout_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/pd_layout_marginEnd</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pd_view">
+        <item name="android:layout_gravity">center</item>
+        <item name="background">@color/pd_view</item>
+
+    </style>
+
+    <style name="pd_btn_layout_txt">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">@dimen/pd_font_size_medium</item>
+        <item name="android:drawablePadding">@dimen/_5sdp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="pd_app_logo">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:src">@drawable/pd_ic_doctor</item>
+        <item name="drawableSize">@dimen/_50sdp</item>
+        <item name="android:layout_marginTop">@dimen/pd_layout_marginTop</item>
+
+
+    </style>
+
+    <style name="pd_margin_all">
+        <item name="android:padding">@dimen/pd_padding_final</item>
+        <item name="android:layout_marginTop">@dimen/pd_layout_marginTop</item>
+        <item name="android:layout_marginStart">@dimen/pd_layout_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/pd_layout_marginEnd</item>
+    </style>
+
+    <style name="pd_margin">
+        <item name="android:layout_marginTop">@dimen/pd_layout_marginTop</item>
+        <item name="android:layout_marginStart">@dimen/pd_layout_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/pd_layout_marginEnd</item>
+    </style>
+
+    <style name="pd_font_center_large">
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/pd_spacing_standard_new</item>
+        <item name="android:layout_marginStart">@dimen/pd_layout_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/pd_layout_marginEnd</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/pd_font_size_xlarge</item>
+        <item name="android:textColor">@color/pd_color_black</item>
+    </style>
+
+    <style name="pd_font_large_medium">
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/pd_spacing_standard_new</item>
+        <item name="android:layout_marginStart">@dimen/pd_layout_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/pd_layout_marginEnd</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/pd_font_size_xlarge</item>
+        <item name="android:textColor">@color/pd_color_black</item>
+        <item name="fontPath">@string/pd_font_medium</item>
+    </style>
+
+    <style name="pd_drawable_bg">
+        <item name="background">@drawable/pd_ic_txt_ip_background</item>
+    </style>
+
+
+    <style name="pd_txt_ip_layout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginTop">@dimen/pd_layout_marginTop</item>
+        <item name="android:layout_marginStart">@dimen/pd_layout_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/pd_layout_marginEnd</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/pd_boxCornerRadiusBottomEnd</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/pd_boxCornerRadiusBottomStart</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/pd_boxCornerRadiusTopEnd</item>
+        <item name="boxCornerRadiusTopStart">@dimen/pd_boxCornerRadiusTopStart</item>
+    </style>
+
+
+    <style name="pd_edt_txt_personal_info">
+
+        <item name="android:padding">@dimen/pd_padding_final</item>
+        <item name="android:textSize">@dimen/pd_font_size_medium</item>
+        <item name="android:textColor">@color/pd_color_black</item>
+
+    </style>
+
+    <style name="pd_edt_txt_details" parent="pd_edt_txt_personal_info">
+
+
+        <item name="android:layout_height">@dimen/pd_btn_layout_height</item>
+        <item name="android:layout_marginTop">@dimen/pd_spacing_standard</item>
+        <item name="android:layout_marginStart">@dimen/pd_layout_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/pd_layout_marginEnd</item>
+
+    </style>
+
+    <style name="pd_edt_txt_otp">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">@dimen/pd_edt_txt_otp_height</item>
+        <item name="android:layout_width">@dimen/pd_edt_txt_otp_width</item>
+        <item name="android:layout_marginTop">@dimen/pd_spacing_standard_new</item>
+        <item name="android:layout_marginEnd">@dimen/pd_spacing_standard_new</item>
+        <item name="android:layout_marginBottom">@dimen/pd_spacing_standard_new</item>
+        <item name="android:padding">@dimen/pd_spacing_standard</item>
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:background">@drawable/pd_edt_txt_pin_bg</item>
+    </style>
+
+    <style name="pd_bottom_navigation_view">
+        <item name="android:layout_height">@dimen/pd_navigation_view_height</item>
+        <item name="backgroundTint">@color/pd_color_white</item>
+        <item name="background">@drawable/pd_btn_sign_in_bg</item>
+
+    </style>
+
+
+    <style name="pd_txt_view_pager">
+
+        <item name="android:textColor">@color/pd_color_white</item>
+        <item name="android:layout_marginStart">@dimen/pd_spacing_standard_new</item>
+        <item name="android:layout_marginTop">@dimen/pd_spacing_standard_new</item>
+        <item name="android:gravity">center</item>
+        <item name="paddingStart">@dimen/pd_spacing_control</item>
+        <item name="drawableTint">@color/pd_color_white</item>
+        <item name="fontPath">@string/pd_font_regular</item>
+    </style>
+
+    <style name="pd_view_pager">
+
+        <item name="android:layout_height">@dimen/_190sdp</item>
+
+
+    </style>
+
+
+    <style name="pd_MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="pd_ic_bg_small">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginEnd">@dimen/pd_spacing_standard_new</item>
+        <item name="background">@drawable/pd_edt_txt_pin_bg</item>
+        <item name="android:padding">@dimen/pd_spacing_control</item>
+
+    </style>
+
+    <style name="pd_outlet_txt">
+        <item name="android:textColor">@color/pd_color_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/pd_font_size_medium</item>
+
+    </style>
+
+    <style name="pd_card_large_txt">
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/pd_spacing_standard_new</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/pd_font_size_xxlarge</item>
+        <item name="fontPath">@string/pd_font_medium</item>
+        <item name="android:textColor">@color/pd_color_black</item>
+    </style>
+
+    <style name="pd_img_therapist_detail_bg" parent="pd_margin">
+        <item name="background">@drawable/pd_btn_sign_in_bg</item>
+        <item name="android:backgroundTint">@color/pd_view_pager_1</item>
+        <item name="android:padding">@dimen/pd_spacing_standard</item>
+        <item name="android:layout_marginStart">@dimen/pd_spacing_standard_new</item>
+    </style>
+
+    <style name="pd_txt_therapist_detail_title" parent="pd_margin">
+        <item name="android:textColor">@color/pd_txt_therapist_details</item>
+        <item name="android:textSize">@dimen/pd_font_size_medium</item>
+        <item name="android:layout_marginStart">@dimen/pd_spacing_control_half</item>
+    </style>
+
+    <style name="pd_txt_therapist_detail">
+        <item name="android:textSize">@dimen/pd_font_size_normal</item>
+        <item name="fontPath">@string/pd_font_medium</item>
+        <item name="android:textColor">@color/pd_color_white</item>
+        <item name="android:layout_marginStart">@dimen/pd_spacing_control_half</item>
+    </style>
+
+    <style name="pd_txt_outlet_title">
+        <item name="android:textColor">@color/pd_txt_therapist_details</item>
+        <item name="android:textSize">@dimen/pd_font_size_medium</item>
+        <item name="android:layout_marginTop">@dimen/pd_layout_marginTop</item>
+        <item name="android:layout_marginStart">@dimen/pd_layout_marginStart</item>
+        <item name="android:layout_marginEnd">@dimen/pd_layout_marginEnd</item>
+    </style>
+
+    <style name="pd_txt_outlet_details">
+        <item name="android:textSize">@dimen/pd_font_size_medium</item>
+        <item name="android:textColor">@color/pd_color_white</item>
+        <item name="android:layout_marginStart">@dimen/pd_layout_marginStart</item>
+    </style>
+
+    <style name="pd_btn_booking_details">
+        <item name="android:layout_marginTop">@dimen/pd_spacing_standard_new</item>
+        <item name="android:padding">@dimen/pd_spacing_standard</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/pd_color_doc</item>
+        <item name="cornerRadius">@dimen/_8sdp</item>
+    </style>
+
+    <style name="pd_txt_booking_details_titles" parent="pd_txt_outlet_title">
+        <item name="android:textSize">@dimen/pd_font_size_small</item>
+        <item name="android:textColor">@color/pd_textColorSecondary</item>
+    </style>
+
+    <style name="pd_txt_booking_details" parent="pd_txt_outlet_details">
+        <item name="android:textColor">@color/pd_color_black</item>
+        <item name="fontPath">@string/pd_font_regular</item>
+    </style>
+
+    <style name="pd_txt_splash_title" parent="pd_txt_outlet_details">
+        <item name="android:textColor">@color/pd_color_black</item>
+        <item name="fontPath">@string/pd_font_bold</item>
+    </style>
+
+    <style name="pd_txt_drawer" parent="pd_txt_outlet_details">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/social_textColorPrimary</item>
+        <item name="android:textSize">@dimen/pd_font_size_medium</item>
+        <item name="android:drawablePadding">@dimen/pd_spacing_standard_new</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/pd_spacing_standard</item>
+        <item name="android:paddingBottom">@dimen/pd_spacing_standard</item>
+
+    </style>
+
+    <style name="pd_txt_card_profile" parent="pd_txt_outlet_title">
+        <item name="android:layout_marginStart">@dimen/pd_spacing_control</item>
+        <item name="android:textColor">@color/pd_textColorSecondary</item>
+    </style>
+
+    <style name="pd_txt_edit_profile" parent="pd_margin">
+        <item name="android:textSize">@dimen/pd_font_size_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/pd_color_black</item>
+        <item name="android:drawablePadding">@dimen/pd_spacing_standard</item>
+        <item name="android:layout_marginTop">@dimen/pd_spacing_standard</item>
+    </style>
+
+    <style name="pd_tv_edit_profile" parent="pd_margin">
+        <item name="android:textSize">@dimen/pd_font_size_micro</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="android:textColor">@color/pd_color_black</item>
+        <item name="android:drawablePadding">@dimen/pd_spacing_standard</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/_5sdp</item>
+        <item name="android:background">@drawable/pd_shadow_bg</item>
+    </style>
+
+    <style name="pd_btn_edit_profile">
+        <item name="android:padding">@dimen/pd_padding_final</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/pd_layout_marginTop</item>
+        <item name="background">@drawable/pd_btn_sign_in_bg</item>
+        <item name="android:textSize">@dimen/pd_font_size_medium</item>
+        <item name="android:textColor">@color/pd_color_white</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="pd_tab_layout" parent="pd_margin">
+        <item name="textAllCaps">false</item>
+        <item name="tabIndicator">@color/pd_transparent</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabSelectedTextColor">@color/pd_color_white</item>
+        <item name="tabTextColor">@color/pd_txt_zip_code</item>
+        <item name="tabBackground">@drawable/pd_tab_layout_selector</item>
+    </style>
+
+    <style name="pd_notification_green_dot">
+        <item name="android:layout_width">@dimen/_8sdp</item>
+        <item name="android:layout_height">@dimen/_8sdp</item>
+        <item name="background">@drawable/pd_switch_thumb</item>
+        <item name="backgroundTint">@color/pd_switch_track</item>
+        <item name="android:layout_marginEnd">@dimen/_36sdp</item>
+        <item name="android:layout_marginTop">@dimen/pd_spacing_standard</item>
+    </style>
+
+
+    <style name="pd_CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/pd_CustomBottomSheet</item>
+    </style>
+
+    <style name="pd_CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/pd_CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="pd_CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_15sdp</item>
+        <item name="cornerSizeTopLeft">@dimen/_15sdp</item>
+
+    </style>
+
+
+    <style name="pd_font_bold">
+        <item name="fontPath">@string/pd_font_bold</item>
+    </style>
+
+    <style name="pd_font_medium">
+        <item name="fontPath">@string/pd_font_medium</item>
+    </style>
+
+    <style name="pd_font_regular">
+        <item name="fontPath">@string/pd_font_regular</item>
+    </style>
+
+    <style name="pd_bottom_bar_background">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">@dimen/pd_spacing_standard</item>
+        <item name="android:layout_marginEnd">@dimen/pd_spacing_standard</item>
+        <item name="android:layout_width">@dimen/_30sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="pd_bottom_bar_icon">
+        <item name="android:layout_width">@dimen/_20sdp</item>
+        <item name="android:padding">@dimen/pd_spacing_control_half</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="pd_img_button">
+        <item name="android:layout_width">@dimen/_36sdp</item>
+        <item name="android:layout_height">@dimen/_36sdp</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginEnd">@dimen/pd_spacing_standard</item>
+        <item name="android:padding">@dimen/pd_spacing_standard</item>
+        <item name="android:background">@drawable/pd_shadoe</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme3CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/Theme3_font_size_medium</item>
+    </style>
+
+    <style name="Theme1EditTextStyle_rounded">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+        <item name="android:paddingEnd">@dimen/Theme1_spacing_control</item>
+        <item name="android:paddingTop">@dimen/Theme1_spacing_standard_new</item>
+        <item name="android:paddingBottom">@dimen/Theme1_spacing_standard_new</item>
+        <item name="android:textColor">@color/social_textColorPrimary</item>
+        <item name="android:textSize">@dimen/Theme1_font_size_normal</item>
+        <item name="android:textColorHint">@color/social_textColorSecondary</item>
+        <item name="android:background">@drawable/theme1_bg_edittext</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/SocialFontMedium</item>
+        <item name="android:layout_marginStart">@dimen/Theme1_spacing_standard_new</item>
+        <item name="android:layout_marginEnd">@dimen/Theme1_spacing_standard_new</item>
+    </style>
+
+    <style name="Theme2EditTextStyle_rounded">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/_20sdp</item>
+        <item name="android:paddingEnd">@dimen/Theme1_spacing_control</item>
+        <item name="android:paddingTop">@dimen/Theme1_spacing_standard_new</item>
+        <item name="android:paddingBottom">@dimen/Theme1_spacing_standard_new</item>
+        <item name="android:textColor">@color/social_textColorPrimary</item>
+        <item name="android:textSize">@dimen/Theme1_font_size_normal</item>
+        <item name="android:textColorHint">@color/social_textColorSecondary</item>
+        <item name="android:background">@drawable/theme1_bg_edittext</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/SocialFontMedium</item>
+        <item name="android:layout_marginStart">@dimen/Theme1_spacing_standard_new</item>
+        <item name="android:layout_marginEnd">@dimen/Theme1_spacing_standard_new</item>
+    </style>
+
+    <style name="Theme1MaterialButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">@dimen/_12sdp</item>
+        <item name="android:paddingBottom">@dimen/_12sdp</item>
+        <item name="android:paddingStart">@dimen/Theme1_spacing_standard</item>
+        <item name="android:paddingEnd">@dimen/Theme1_spacing_standard</item>
+        <item name="android:textColor">@color/Theme1_textColorPrimary</item>
+        <item name="android:layout_marginStart">@dimen/Theme1_spacing_standard</item>
+        <item name="android:layout_marginEnd">@dimen/Theme1_spacing_standard</item>
+        <item name="backgroundTint">?attr/colorPrimary</item>
+        <item name="rippleColor">@color/Theme1_white</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="DialogStyle" parent="android:Theme.Translucent">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:editTextColor">@color/social_textColorPrimary</item>
+        <item name="android:textColorHint">@color/social_textColorSecondary</item>
+    </style>
+</resources>

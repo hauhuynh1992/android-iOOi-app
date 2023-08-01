@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.iqonic.learnerapp.activities.LearnInstructorDetailActivity">
+    <item
+        android:title="Share" />
+
+    <item
+        android:title="Edit" />
+
+    <item
+        android:title="View in address book" />
+    <item
+        android:title="Verify security code" />
+</menu>

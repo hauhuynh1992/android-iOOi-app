@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/Social_spacing_standard"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/Social_spacing_standard_new"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/Social_spacing_standard_new"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llHold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/social_lbl_hold_on"
+                android:textAppearance="@style/SocialFontMedium"
+                android:textColor="@color/social_textColorPrimary"
+                android:textSize="@dimen/Social_font_size_xlarge" />
+
+            <TextView
+                style="@style/SocialSubTitle"
+                android:layout_marginTop="@dimen/Social_spacing_control"
+                android:singleLine="false"
+                android:text="@string/social_hold_info" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Social_spacing_standard_new"
+                android:gravity="end">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSkip"
+                    style="@style/SocialMaterialButtonStyle.Filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/Social_spacing_standard"
+                    android:backgroundTint="@color/social_dark_gray"
+                    android:text="@string/social_lbl_skip" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNext"
+                    style="@style/SocialMaterialButtonStyle.Filled"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/social_lbl_next" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llTutorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <androidx.viewpager.widget.ViewPager
+              android:overScrollMode="never"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_80sdp"
+              android:id="@+id/viewPager"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Social_spacing_standard_new">
+
+                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:layout_marginEnd="@dimen/Social_spacing_standard"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/dots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:dotsColor="@color/social_view_color"
+                    app:dotsCornerRadius="@dimen/Social_spacing_standard"
+                    app:dotsSize="@dimen/Social_spacing_middle"
+                    app:dotsSpacing="@dimen/Social_spacing_control"
+                    app:dotsWidthFactor="2.5"
+                    app:selectedDotColor="@color/social_colorAccent"
+                    app:progressMode="true" />
+                <LinearLayout
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        style="@style/SocialIconCard"
+                        android:layout_marginEnd="@dimen/Social_spacing_middle"
+                        android:backgroundTint="@color/social_dark_gray"
+                        android:src="@drawable/social_ic_arrow_left" />
+
+                    <ImageView
+                        android:id="@+id/tvNext"
+                        style="@style/SocialIconCard"
+                        android:backgroundTint="@color/social_colorAccent"
+                        android:src="@drawable/social_ic_right" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:visibility="gone"
+                        android:id="@+id/tvNext2"
+                        style="@style/SocialMaterialButtonStyle.Filled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/social_lbl_next" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/llConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/social_lbl_are_you_sure"
+                android:textAppearance="@style/SocialFontMedium"
+                android:textColor="@color/social_textColorPrimary"
+                android:textSize="@dimen/Social_font_size_xlarge" />
+
+            <TextView
+                style="@style/SocialSubTitle"
+                android:layout_marginTop="@dimen/Social_spacing_control"
+                android:singleLine="false"
+                android:text="@string/social_sample_text" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnYes"
+                style="@style/SocialMaterialButtonStyle.Filled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:layout_marginTop="@dimen/Social_spacing_standard_new"
+                android:backgroundTint="@color/social_light_yellow"
+                android:text="@string/social_lbl_yes" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMayBe"
+                android:textAllCaps="true"
+                style="@style/SocialMaterialButtonStyle.Filled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Social_spacing_control_half"
+                android:text="@string/social_lbl_may_be" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                style="@style/SocialMaterialButtonStyle.Filled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:backgroundTint="@color/social_dark_gray"
+                android:layout_marginTop="@dimen/Social_spacing_control_half"
+                android:text="@string/social_lbl_cancel" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

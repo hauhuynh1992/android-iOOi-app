@@ -1,0 +1,56 @@
+{
+  "status": "success",
+  "message": "",
+  "data": [
+    {
+      "id": 1,
+      "sender_id": 3,
+      "receiver_id": 1,
+      "content": "Xin chào, dạo này khỏe không?",
+      "type": 1,
+      "created_at": 1633937088,
+      "sender": {
+        "id": 3,
+        "CodeNo": "003",
+        "CreatedBy": 1,
+        "Email": "abc@gmail.com",
+        "Image": null,
+        "Name": "Phạm Thị Ngọc Tuyền",
+        "Adress": null,
+        "Phone": null,
+        "GioiThieu": null,
+        "RandomString": null,
+        "Active": 1,
+        "UserGroup": 0,
+        "DateRegister": 32323,
+        "DateExpiration": 1639837291,
+        "Socket": "XyBY9wuotHIyIntrAAAl"
+      }
+    },
+    {
+      "id": 2,
+      "sender_id": 1,
+      "receiver_id": 1,
+      "content": "Uhm, mình khỏe",
+      "type": 1,
+      "created_at": 1633937088,
+      "sender": {
+        "id": 1,
+        "CodeNo": "001",
+        "CreatedBy": 1,
+        "Email": "abc@gmail.com",
+        "Image": null,
+        "Name": "Huỳnh Phi Hậu",
+        "Adress": null,
+        "Phone": null,
+        "GioiThieu": null,
+        "RandomString": null,
+        "Active": 1,
+        "UserGroup": 0,
+        "DateRegister": 32323,
+        "DateExpiration": 1639837291,
+        "Socket": "XyBY9wuotHIyIntrAAAl"
+      }
+    }
+  ]
+}

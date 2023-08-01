@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:background="@drawable/bg_button_white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="Edit name"
+            android:textColor="@color/social_colorPrimary"
+            android:textSize="@dimen/pd_font_size_medium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:ellipsize="end"
+            android:hint="Input new name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingTop="@dimen/_6sdp"
+            android:paddingBottom="@dimen/_6sdp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            style="@style/Theme1MaterialButtonStyle"
+            android:layout_marginStart="@dimen/Theme1_spacing_standard_new"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/Theme1_spacing_standard_new"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:backgroundTint="@color/social_black"
+            android:elevation="@dimen/Theme1_spacing_middle"
+            android:text="Save"
+            android:textAppearance="@style/SocialFontBold"
+            android:textColor="@color/social_white"
+            android:textSize="@dimen/Theme1_font_size_normal"
+            app:cornerRadius="@dimen/_32sdp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

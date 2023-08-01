@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/social_app_background"
+    android:orientation="vertical"
+    tools:context=".ui.changePhone.ChangePhoneActivity">
+
+    <include layout="@layout/social_toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/Social_spacing_large"
+                android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                android:text="@string/social_lbl_change_phone"
+                android:textAppearance="@style/SocialFontBold"
+                android:textColor="@color/social_textColorPrimary"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                android:layout_marginTop="@dimen/Social_spacing_control"
+                android:layout_marginEnd="@dimen/Social_spacing_standard_new"
+                android:text="@string/social_lbl_please_enter_your_old_and_new_phone_numbers_below"
+                android:textColor="@color/social_textColorPrimary"
+                android:textSize="@dimen/Social_font_size_medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                android:layout_marginTop="@dimen/Social_spacing_large"
+                android:layout_marginEnd="@dimen/Social_spacing_standard_new"
+                android:text="@string/social_lbl_old_phone_number"
+                android:textColor="@color/social_textColorPrimary"
+                android:textSize="@dimen/Social_font_size_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                android:layout_marginTop="@dimen/Social_spacing_standard"
+                android:layout_marginEnd="@dimen/Social_spacing_standard_new"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/social_bg_stroke"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/Social_spacing_control"
+                    android:paddingEnd="0dp"
+                    app:ccp_contentColor="@color/social_textColorPrimary"
+                    app:ccp_showFlag="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showPhoneCode="false" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                    android:layout_weight="2"
+                    android:background="@drawable/social_bg_stroke"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/social_ic_call"
+                        android:drawablePadding="@dimen/Social_spacing_standard"
+                        android:ems="10"
+                        android:hint="@string/social_hint_mobile_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingStart="@dimen/Social_spacing_middle"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/Social_spacing_middle"
+                        android:paddingBottom="@dimen/_12sdp"
+                        android:textColor="@color/social_textColorPrimary" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                android:layout_marginTop="@dimen/Social_spacing_standard"
+                android:layout_marginEnd="@dimen/Social_spacing_standard_new"
+                android:text="@string/social_lbl_new_phone_number"
+                android:textColor="@color/social_textColorPrimary"
+                android:textSize="@dimen/Social_font_size_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                android:layout_marginTop="@dimen/Social_spacing_standard"
+                android:layout_marginEnd="@dimen/Social_spacing_standard_new"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/social_bg_stroke"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/Social_spacing_control"
+                    android:paddingEnd="0dp"
+                    app:ccp_contentColor="@color/social_textColorPrimary"
+                    app:ccp_showFlag="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showPhoneCode="false" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                    android:layout_weight="2"
+                    android:background="@drawable/social_bg_stroke"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/social_ic_call"
+                        android:drawablePadding="@dimen/Social_spacing_standard"
+                        android:ems="10"
+                        android:hint="@string/social_hint_mobile_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingStart="@dimen/Social_spacing_middle"
+                        android:paddingTop="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/Social_spacing_middle"
+                        android:paddingBottom="@dimen/_12sdp"
+                        android:textColor="@color/social_textColorPrimary" />
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/btnContinue"
+                android:paddingStart="@dimen/Social_spacing_large"
+                android:paddingEnd="@dimen/Social_spacing_large"
+                android:paddingTop="@dimen/_14sdp"
+                android:paddingBottom="@dimen/_14sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/social_bg_primary_corner"
+                android:layout_marginStart="@dimen/Social_spacing_standard_new"
+                android:layout_marginEnd="@dimen/Social_spacing_standard_new"
+                android:layout_marginTop="@dimen/Social_spacing_xlarge"
+                android:backgroundTint="@color/social_colorAccent">
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/social_white"
+                    android:drawableTint="@color/social_white"
+                    android:textSize="@dimen/Social_font_size_medium"
+                    android:textAppearance="@style/SocialFontMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/Social_spacing_standard"
+                    android:drawableEnd="@drawable/social_ic_arrow_forward"
+                    android:gravity="center"
+                    android:text="@string/social_lbl_continue" />
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

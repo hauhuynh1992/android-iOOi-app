@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/social_colorPrimaryDark"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/social_colorPrimary"
+        app:title="New Group"
+        app:titleTextColor="@color/social_white" />
+
+    <RelativeLayout
+        android:id="@+id/rl_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/social_colorPrimaryDark"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/social_colorPrimaryDark"
+                android:layoutAnimation="@anim/social_layout_animation"
+                android:scrollbars="vertical"
+                app:layout_constraintHeight_max="@dimen/_100sdp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#e9e9e9" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <!-- Adding 15 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+
+                    <include layout="@layout/shimmer_placeholder_layout" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvContact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/social_colorPrimaryDark"
+                android:layoutAnimation="@anim/social_layout_animation" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnNext"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@drawable/social_bg_circle"
+            android:padding="@dimen/_15sdp"
+            android:src="@drawable/social_forward"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/btnActionClock"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@drawable/bg_green_cirle"
+            android:backgroundTint="@color/social_white"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_lock"
+                app:tint="@color/social_black" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

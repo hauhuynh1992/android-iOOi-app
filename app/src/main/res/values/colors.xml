@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <color name="social_colorPrimary">#1f1f1f</color>
+    <color name="social_colorPrimaryDark">#000000</color>
+    <color name="social_colorSecondary">#121212</color>
+    <color name="social_colorBgCard">#1e1e1e</color>
+    <color name="social_colorAccent">#71afdb</color>
+    <color name="social_textColorPrimary">#ffffff</color>
+    <color name="social_textColorSecondary">#a5a5a5</color>
+
+<!--    <color name="social_colorPrimary">#212121</color>-->
+<!--    <color name="social_colorSecondary">#818181</color>-->
+<!--    <color name="social_colorPrimaryDark">#000000</color>-->
+<!--    <color name="social_colorBgCard">#1d2633</color>-->
+<!--    <color name="social_colorAccent">#71afdb</color>-->
+
+    <color name="social_blue">#2A2D50</color>
+    <color name="social_gray">#E4E5ED</color>
+    <color name="social_light_blue">#f0f8fb</color>
+    <color name="social_transparent">#00999DC9</color>
+
+    <color name="social_app_background">#CCFFFFFF</color>
+    <color name="social_view_color">#151f2b</color>
+    <color name="social_view_my_message">#3b4755</color>
+    <color name="social_view_my_message_duration">#ffffff</color>
+    <color name="social_view_sender_message">#ffffff</color>
+    <color name="social_view_sender_message_duration">#ffffff</color>
+
+    <color name="social_white">#ffffff</color>
+    <color name="social_black">#000000</color>
+    <color name="social_trans_gray">#80614f4a</color>
+
+    <color name="social_icon_color">#747474</color>
+    <color name="social_form_background">#F6F7F9</color>
+
+    <color name="social_form_facebook">#2F3181</color>
+    <color name="social_form_google">#F13B19</color>
+    <color name="social_green">#0DAF14</color>
+    <color name="social_yellow">#FFDC56</color>
+    <color name="social_dark_yellow">#FF9800</color>
+    <color name="social_dark_gray">#475062</color>
+    <color name="social_light_gray">#2c2c2c</color>
+    <color name="social_light_yellow">#FFE16D</color>
+    <color name="social_perpul">#673AB7</color>
+
+    // doctor
+    <color name="pd_colorPrimary">#316FFE</color>
+    <color name="pd_colorPrimaryDark">#00574B</color>
+    <color name="pd_colorAccent">#316FFE</color>
+    <color name="pd_color_doc">#316FFE</color>
+    <color name="pd_color_black">#000</color>
+    <color name="pd_ic_txtip_bg">#B5CAF2</color>
+    <color name="pd_btn_signin">#316FFE</color>
+    <color name="pd_color_white">#FFFFFF</color>
+    <color name="pd_view">#F5F5F5</color>
+    <color name="pd_forgot_pass">#B5CAF2</color>
+    <color name="pd_bg_zip_code">#F3F3F3</color>
+    <color name="pd_txt_zip_code">#B6BDBF</color>
+    <color name="pd_home_bg">#F4F9FF</color>
+    <color name="pd_view_pager_1">#19CFEC</color>
+    <color name="pd_view_pager_2">#03A7CA</color>
+    <color name="pd_view_line">#E4E4E4</color>
+
+    <color name="pd_transparent">#00000000</color>
+    <color name="pd_tab_layout_bg">#E9EEF4</color>
+    <color name="pd_btn_card_bg">#EAF0FF</color>
+    <color name="pd_switch_track">#25BA4D</color>
+    <color name="pd_txt_transparrent_bg">#DC03A7CA</color>
+    <color name="pd_txt_therapist_details">#C1EDF4</color>
+    <color name="pd_txt_edit_profile">#25BA4D</color>
+    <color name="pd_btn_txt_facebook">#4C6EB3</color>
+    <color name="pd_btn_facebook_bg">#ECEFF8</color>
+    <color name="pd_btn_insta_bg">#FAE9F1</color>
+    <color name="pd_btn_txt_insta">#DA639A</color>
+    <color name="pd_btn_waza_bg">#E4F5FC</color>
+    <color name="pd_btn_txt_waze">#6DC2DB</color>
+    <color name="pd_textcolorprimary">#333333</color>
+    <color name="pd_textColorSecondary">#7c8896</color>
+    <color name="pd_card_bg">#10BEDD</color>
+    <color name="default_week_day_title_text_color">#91959b</color>
+
+    <color name="Theme3_colorPrimary">#fc4a1a</color>
+    <color name="Theme3_colorPrimaryDark">#f7b733</color>
+    <color name="Theme3_colorAccent">#f7b733</color>
+    <color name="Theme3_color_red">#F12727</color>
+    <color name="Theme3_textColorPrimary">#333333</color>
+    <color name="Theme3_textColorSecondary">#9D9D9D</color>
+
+    <color name="Theme3_app_background">#f8f8f8</color>
+    <color name="Theme3_view_color">#DADADA</color>
+
+    <color name="Theme3_white">#ffffff</color>
+
+    <color name="Theme3_icon_color">#747474</color>
+    <color name="Theme3_color_green">#8BC34A</color>
+    <color name="theme3_edit_background">#F5F4F4</color>
+    <color name="theme3_light_gray">#CECACA</color>
+    <color name="theme3_color_tint">#F4704C</color>
+
+    <color name="colorGrey">#dddddd</color>
+
+    <color name="color1">#C0392B</color>
+    <color name="color2">#E74C3C</color>
+    <color name="color3">#9B59B6</color>
+    <color name="color4">#8E44AD</color>
+    <color name="color5">#2980B9</color>
+    <color name="color6">#3498DB</color>
+    <color name="color7">#1ABC9C</color>
+    <color name="color8">#16A085</color>
+    <color name="color9">#27AE60</color>
+    <color name="color10">#2ECC71</color>
+    <color name="color11">#2ECC71</color>
+    <color name="color12">#F1C40F</color>
+    <color name="color13">#F39C12</color>
+    <color name="color14">#E67E22</color>
+    <color name="color15">#E67E22</color>
+    <color name="color16">#D35400</color>
+    <color name="color17">#DFFF00</color>
+    <color name="color18">#FFBF00</color>
+    <color name="color19">#FF7F50</color>
+    <color name="color20">#FF7F50</color>
+    <color name="color21">#DE3163</color>
+    <color name="color22">#9FE2BF</color>
+    <color name="color23">#40E0D0</color>
+    <color name="color24">#6495ED</color>
+    <color name="color25">#CCCCFF</color>
+
+    <!--WaveForm Audio-->
+    <color name="default_waveform">#FFFFFF</color>
+    <color name="default_waveformFill">#80FFC0</color>
+    <color name="default_playback_indicator">#ffff66</color>
+    <color name="default_timecode">#ddffffdd</color>
+    <color name="default_background">#000000</color>
+
+    <!-- Message Bottom dialog -->
+    <color name="bg_message_dialog">#4B4B4B</color>
+    <color name="tv_message_dialog">#BAB9B9</color>
+    <color name="transparent_black_35">#59000000</color>
+    <color name="colorLabel">#e0e0e0</color>
+
+    <color name="Theme1_colorPrimary">#ff8080</color>
+    <color name="Theme1_colorPrimaryDark">#ff8080</color>
+    <color name="Theme1_colorAccent">#ff8080</color>
+
+    <color name="Theme1_textColorPrimary">#333333</color>
+    <color name="Theme1_textColorSecondary">#747474</color>
+
+    <color name="Theme1_app_background">#f8f8f8</color>
+    <color name="Theme1_view_color">#DADADA</color>
+
+    <color name="Theme1_sign_in_background">#DADADA</color>
+
+    <color name="Theme1_white">#ffffff</color>
+
+
+    <color name="Theme1_icon_color">#747474</color>
+    <color name="Theme1_selected_tab">#FCE9E9</color>
+    <color name="Theme1_red">#F10202</color>
+    <color name="Theme1_green">#4CAF50</color>
+    <color name="Theme1_blue">#1D36C0</color>
+
+    <color name="transparent_black_80">#CC000000</color>
+    <color name="transparent_blue_80">#7F19CFEC</color>
+</resources>

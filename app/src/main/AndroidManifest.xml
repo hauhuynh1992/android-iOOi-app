@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.phillip.chapApp">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".ui.base.SocialApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/SocialAppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.phillip.chapApp.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity
+            android:name=".ui.editName.EditNameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+
+        <activity
+            android:name=".ui.friendRequest.FriendRequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+
+        <activity
+            android:name=".ui.editPhone.EditPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+
+        <activity
+            android:name=".ui.editEmail.EditEmailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+
+        <activity
+            android:name=".ui.editAddress.EditAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+
+        <activity
+            android:name=".ui.editBio.EditBioActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+
+        <activity
+            android:name=".ui.editPassword.EditPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+
+        <activity
+            android:name=".ui.chatUser.ChatUSerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.newGroup.NewGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+        <activity
+            android:name=".ui.changePhone.ChangePhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleInstance"
+            android:theme="@style/SocialAppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"></activity>
+        <activity
+            android:name=".ui.dashboard.DashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme"></activity>
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <activity
+            android:name=".ui.detailProfile.DetailProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:theme="@style/SocialAppTheme" />
+        <activity
+            android:name=".ui.detailChannel.DetailChannelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+        <activity
+            android:name=".ui.createGroup.CreateGroupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+        <activity
+            android:name=".ui.forgetPassword.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+        <activity
+            android:name=".ui.editChannel.EditChannelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+        <activity
+            android:name=".ui.addMember.AddMemberActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+        <activity
+            android:name=".ui.contact.ContactActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme" />
+
+        <activity
+            android:name=".ui.welcome.SocialWelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SocialAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".service.ChatService" />
+    </application>
+
+</manifest>

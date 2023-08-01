@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape>
+            <padding android:bottom="@dimen/_1sdp" />
+
+            <solid android:color="#00CFD1D6" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/_25sdp"
+                android:bottomRightRadius="@dimen/_25sdp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:bottom="@dimen/_1sdp" />
+
+            <solid android:color="#05CFD1D6" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/_25sdp"
+                android:bottomRightRadius="@dimen/_25sdp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:bottom="@dimen/_1sdp" />
+
+            <solid android:color="#0aCFD1D6" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/_25sdp"
+                android:bottomRightRadius="@dimen/_25sdp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:bottom="@dimen/_1sdp" />
+
+            <solid android:color="#0fCFD1D6" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/_25sdp"
+                android:bottomRightRadius="@dimen/_25sdp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:bottom="@dimen/_1sdp" />
+
+            <solid android:color="#14CFD1D6" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/_25sdp"
+                android:bottomRightRadius="@dimen/_25sdp" />
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item android:id="@+id/itemShape">
+        <shape>
+            <solid android:color="@color/pd_color_white" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/_25sdp"
+                android:bottomRightRadius="@dimen/_25sdp" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,595 @@
+<resources>
+    <string name="app_name">iOOi</string>
+    <string name="social_font_bold">socialfonts/googlesansebold.ttf</string>
+    <string name="social_font_medium">socialfonts/googlesansmedium.ttf</string>
+    <string name="social_font_regular">socialfonts/googlesansregular.ttf</string>
+    <string name="social_lbl_friends">Friends</string>
+    <string name="social_lbl_see_more">See more</string>
+    <string name="social_lbl_welcome">Welcome</string>
+    <string name="social_lbl_welcome_info">Enter your phone number to continue to inMood Messenger and enjoy messaging and calling to all your friend</string>
+    <string name="social_name">Matloob Mehrab</string>
+    <string name="social_setting_lbl_">Isn\'t it strange that we talk least about</string>
+    <string name="social_lbl_account">Account</string>
+    <string name="social_lbl_account_info">Privacy, security, change number</string>
+    <string name="social_lbl_chats">Chats</string>
+    <string name="social_lbl_chats_info">Backup, history, wallpaper</string>
+    <string name="social_lbl_data_and_storage_usage">Data and storage usage</string>
+    <string name="social_lbl_data_info">Network usage, auto download</string>
+    <string name="social_lbl_notifications">Notifications</string>
+    <string name="social_lbl_new_group">New Group</string>
+    <string name="social_lbl_notification_info"><![CDATA[Message, group & call tones]]></string>
+    <string name="social_lbl_help">Help</string>
+    <string name="social_lbl_help_info">FAQ, contact us, privacy policy</string>
+    <string name="social_lbl_invite_friends">Invite Friends</string>
+    <string name="social_lbl_invite_friends_info">Invite new friends and earn</string>
+    <string name="social_lbl_privacy">Privacy</string>
+    <string name="social_lbl_privacy_info"><![CDATA[Message & status privacy]]></string>
+    <string name="social_lbl_security">Security</string>
+    <string name="social_lbl_security_info"><![CDATA[Message & call encryption]]></string>
+    <string name="social_lbl_two_step_verification">Two step verification</string>
+    <string name="social_lbl_verification_info">Enable two-step verification</string>
+    <string name="social_lbl_change_number">Change Number</string>
+    <string name="social_lbl_change_number_info">Change your phone number</string>
+    <string name="social_lbl_request_info">Request info</string>
+    <string name="social_lbl_request_info_">Request a report of your account</string>
+    <string name="social_lbl_delete_account">Delete Account</string>
+    <string name="social_lbl_delete_account_info">Deactivate my account</string>
+    <string name="social_lbl_message_notification">Message Notifications</string>
+    <string name="social_lbl_notification_tone">Notification Tone</string>
+    <string name="social_lbl_default_ringtone">Default ringtone</string>
+    <string name="social_lbl_vibrate">Vibrate</string>
+    <string name="social_lbl_default_vibration">Default Vibration</string>
+    <string name="social_lbl_popup_notification">Popup Notification</string>
+    <string name="social_lbl_only_show_when_screen_is_on">Only show when screen is ON</string>
+    <string name="social_lbl_light">Light</string>
+    <string name="social_lbl_white">White</string>
+    <string name="social_lbl_use_high_priority_notifications">Use high priority notifications</string>
+    <string name="social_lbl_show_preview_of_notifications_at_the_top_of_the_screen">Show preview of notifications at the top of the screen</string>
+    <string name="social_lbl_ringtone">Ringtone</string>
+    <string name="social_email">Matloobmehrab@gmail.com</string>
+    <string name="social_phone">+91 11000287</string>
+    <string name="social_info_this_is_not_your_username_or_pin_this_name_be_visible_to_your_whatsapp_contacts">This is not your username or pin. This name be visible to your WhatsApp contacts.</string>
+    <string name="social_lbl_groups">Groups</string>
+    <string name="social_lbl_my_status">My Status</string>
+    <string name="social_lbl_tap_to_add_status">Tap to add status</string>
+    <string name="social_7_30_pm">7:30 PM</string>
+    <string name="social_lbl_status">Status</string>
+    <string name="social_lbl_calls">Calls</string>
+    <string name="social_hint_mobile_number">Mobile Number</string>
+    <string name="social_hint_add_peole">Add People</string>
+    <string name="social_lbl_continue">Continue</string>
+    <string name="social_lbl_your_form_submission_is_subjected_n_to_our_privacy_and_policy">Your form submission is subjected \n to our Privacy and Policy</string>
+    <string name="social_lbl_agree_continue"><![CDATA[Agree & Continue]]></string>
+    <string name="social_lbl_welcome_to_inmood">Welcome to INMOOD</string>
+    <string name="social_lbl_enter_in_send">Enter in send</string>
+    <string name="social_lbl_enter_key_will_send_your_message">Enter key will send your message</string>
+    <string name="social_lbl_show_newly_downloaded_media_in_your_phone_s_gallery">Show newly downloaded media in your phone\'s gallery</string>
+    <string name="social_lbl_app_languages">App Languages</string>
+    <string name="social_lbl_phone_languages_english">Phone languages (English)</string>
+    <string name="social_lbl_font_size">Font Size</string>
+    <string name="social_lbl_medium_fonts">Medium Fonts</string>
+    <string name="social_lbl_chat_backup">Chat Backup</string>
+    <string name="social_lbl_view_backup_history_settings"><![CDATA[View backup history & settings]]></string>
+    <string name="social_lbl_chat_history">Chat History</string>
+    <string name="social_lbl_share_and_download_history">Share and download history</string>
+    <string name="social_lbl_skip">Skip</string>
+    <string name="social_lbl_next">Next</string>
+    <string name="social_lbl_hold_on">Hold on!</string>
+    <string name="social_lbl_media">Media</string>
+    <string name="social_lbl_mute_notifications">Mute Notifications</string>
+    <string name="social_lbl_custom_notifications">Custom Notifications</string>
+    <string name="social_lbl_media_visibility">Media Visibility</string>
+    <string name="social_lbl_encryption">Encryption</string>
+    <string name="social_lbl_encryption_info">Message to this chat and calls are secured with end-to-end encryption. \nTap to verify</string>
+    <string name="social_lbl_about_and_phone_number">About and phone number</string>
+    <string name="social_lbl_hy_there_i_am_using_inmood">Hy there! I am using InMood</string>
+    <string name="social_lbl__11_december_2019">11 December 2019</string>
+    <string name="social_welcome_info">Read our Privacy Policy. Tap Agree and Continue to accept the Terms of Services.</string>
+    <string name="social_lbl_settings">Settings</string>
+    <string name="social_lbl_profile">Profile</string>
+    <string name="social_lbl_block_user">Block user</string>
+    <string name="social_lbl_unfriend">Unfriend</string>
+    <string name="social_lbl_report_user">Report user</string>
+    <string name="social_lbl_change_phone">Change Phone</string>
+    <string name="social_lbl_please_enter_your_old_and_new_phone_numbers_below">Please enter your old and new phone \nnumbers below</string>
+    <string name="social_lbl_old_phone_number">Old phone number</string>
+    <string name="social_lbl_new_phone_number">New phone number</string>
+    <string name="social_lbl_country">Country</string>
+    <string name="social_lbl_to_delete_your_account_confirm_your_country_code_and_enter_your_phone_number">To delete your account, confirm your country code and enter your phone number</string>
+    <string name="social_lbl_change_phone_number_instead">Change phone number instead!</string>
+    <string name="social_lbl_delete4">Delete your google drive backup</string>
+    <string name="social_lbl_delete3">Delete you from all of your inMood group</string>
+    <string name="social_lbl_delete2">Erase your message history</string>
+    <string name="social_lbl_delete1">Delete your account from inMood</string>
+    <string name="social_lbl_deleting_your_account_will">Deleting your account will:</string>
+    <string name="social_sample_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="social_sample_long_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+
+    <string name="social_hold_info">Before we start, remember that you can never cross the ocean until you have the courage to loss sight of the share.</string>
+    <string name="social_lbl_tutorial">Tutorial</string>
+    <string name="social_lbl_are_you_sure">Are you sure?</string>
+    <string name="social_lbl_yes">Yes</string>
+    <string name="social_lbl_may_be">May be</string>
+    <string name="social_lbl_cancel">Cancel</string>
+    <string name="social_lbl_scan_qr_code">Scan QR Code</string>
+    <string name="social_lbl_block_matloob">Block Matloob?</string>
+    <string name="social_lbl_type_a_message">Type a message</string>
+    <string name="social_lbl_today_8_00_pm">Today 8:00 PM</string>
+    <string name="social_app_name">Inmood</string>
+    <string name="social_lbl_verify_security_code">Verify security code</string>
+    <string name="social_lbl_use_custom_notification">Use Custom Notification</string>
+    <string name="social_lbl_wallpaper">Wallpaper</string>
+    <string name="social_lbl_select_chat_background_wallpaper">Select chat background wallpaper</string>
+    <string name="social_reset_settings">Reset settings</string>
+    <string name="social_lbl_share">Share</string>
+    <string name="social_lbl_edit_name">Edit name</string>
+    <string name="social_lbl_edit_phone">Edit phone</string>
+    <string name="social_lbl_hint_phone">Please input phone number</string>
+    <string name="social_lbl_edit_email">Edit email</string>
+    <string name="social_lbl_edit_address">Edit Address</string>
+    <string name="social_lbl_edit_bio">Edit Bio</string>
+    <string name="social_lbl_edit_password">Edit Password</string>
+    <string name="social_lbl_edit">Edit</string>
+    <string name="social_lbl_view_in_address_book">View in address book</string>
+
+    <string name="social_txt_account">Account</string>
+    <string name="social_txt_username">Username</string>
+    <string name="social_txt_hint_full_name">Tab to change name</string>
+    <string name="social_txt_edit_name">Edit Name</string>
+    <string name="social_txt_bi0">Bio</string>
+    <string name="social_txt_add_email">Tab to change email</string>
+    <string name="social_txt_add_bio">Tab to change bio</string>
+    <string name="social_txt_change_password">Tab to change password</string>
+    <string name="social_txt_change_address">Tab to change address</string>
+    <string name="social_txt_tab_change_phone">Tab to change phone number</string>
+    <string name="social_txt_setting">Settigns</string>
+    <string name="social_txt_delete_chat_after_10_minus">Delete message after 10 minutes</string>
+    <string name="social_txt_delete_chat_after_30_minutes">Delete message after 30 minutes</string>
+    <string name="social_txt_delete_chat_after_1hour">Delete message after 1 hour</string>
+    <string name="social_txt_delete_chat_after_2day">Delete message after 2 days</string>
+    <string name="social_txt_delete_chat_after_1month">Delete message after 1 month</string>
+    <string name="social_txt_delete_chat_after_none">None</string>
+    <string name="social_txt_notifications_sound">Notifications and Souds</string>
+    <string name="social_txt_notification">Notifications</string>
+    <string name="social_txt_notification_on">On</string>
+    <string name="social_txt_notification_off">Off</string>
+    <string name="social_txt_time_display">Time Interval Message</string>
+    <string name="social_txt_hint_fist_name">Fist Name</string>
+    <string name="social_txt_hint_last_name">Last Name</string>
+    <string name="social_txt_hint_phone">Phone number</string>
+    <string name="social_txt_hint_email">example@gmail.com</string>
+    <string name="social_txt_friend_request">Friend Request</string>
+    <string name="social_txt_privacy_security">Privacy and Security</string>
+    <string name="social_txt_data_storage">Data and Storage</string>
+    <string name="social_txt_chat_setting">Chat settings</string>
+    <string name="social_txt_folder">Folders</string>
+    <string name="social_txt_devices">Devices</string>
+    <string name="social_txt_language">Language</string>
+    <string name="social_txt_help">Help</string>
+    <string name="social_txt_ask_question">Ask a Question</string>
+    <string name="social_txt_fag">FAQ</string>
+    <string name="social_txt_privacy_policy">Privacy Policy</string>
+
+    <string name="social_txt_today">Today</string>
+    <string name="social_txt_yesterday">Yesterday</string>
+    <string name="social_txt_new_message">New Message</string>
+    <string name="social_txt_set_photo">Set Photo</string>
+    <string name="social_txt_description">Description (optional)</string>
+    <string name="social_edit_channel">Edit</string>
+    <string name="social_add_member">Add members</string>
+    <string name="social_full_name">Full Name</string>
+    <string name="social_confirm_password">Confirm password</string>
+    <string name="social_current_password">Current password</string>
+    <string name="social_new_password">New password</string>
+
+    <string name="social_hint_disappearing_message">New messages sent by you will be removed from this chat for everyone</string>
+
+    // Doctor
+    <string-array name="pd_code_list">
+        <item>123456</item>
+        <item>123789</item>
+        <item>123123</item>
+        <item>456123</item>
+        <item>456789</item>
+        <item>123456</item>
+        <item>123789</item>
+        <item>123123</item>
+        <item>456123</item>
+        <item>456789</item>
+        <item>789123</item>
+        <item>789123</item>
+
+    </string-array>
+    <string name="pd_txt_cancel">Cancel</string>
+    <string name="pd_txt_search">Search</string>
+    <string name="pd_txt_edit">Edit</string>
+    <string name="pd_txt_member_id">Member ID:</string>
+    <string name="pd_txt_id">tdftyadfttd</string>
+    <string name="pd_txt_card_faq_1">dxgsgssssgsgh</string>
+    <string name="pd_txt_card_faq_2">There will be no refund but re-scheduleis allow.(subject to availability)</string>
+    <string name="pd_txt_time_peroid">09:00-09:15</string>
+    <string name="pd_txt_therapist">Cris Leong</string>
+    <string name="pd_txt_availability">selected</string>
+    <string name="pd_txt_outlet_2">India</string>
+    <string name="pd_txt_outlet_3">Time</string>
+    <string name="pd_txt_outlet_5">Booking ID</string>
+    <string name="pd_txt_outlet_7">Price</string>
+    <string name="pd_txt_green_12">12</string>
+    <string name="pd_txt_city">Mumbai</string>
+    <string name="pd_txt_country">India</string>
+    <string name="pd_txt_card_today_2">2 hours ago</string>
+    <string name="pd_txt_splash_title">Personal Doctor\nBooking apps</string>
+    <string name="pd_app_name">Personal Doctor Booking App</string>
+    <string name="pd_doc">doc</string>
+    <string name="pd_book">book</string>
+    <string name="pd_email_address">Email Address</string>
+    <string name="pd_address">Address</string>
+    <string name="pd_email_bio">Bio</string>
+    <string name="pd_hint_txt_ip_email">Email Address*</string>
+    <string name="pd_hint_txt_ip_pswd">Password*</string>
+    <string name="pd_txt_forgot_pswd">Forgot Password?</string>
+    <string name="pd_txt_sent_now">Send now</string>
+    <string name="pd_txt_signin">Sign in</string>
+    <string name="pd_txt_signin_with_apple">Sign in with Apple</string>
+    <string name="pd_txt_google_sigin">Sign in with Google</string>
+    <string name="pd_no_accnt">"Don't have an account?"</string>
+    <string name="pd_create_now">Create now</string>
+    <string name="pd_create_accnt">Create an account</string>
+    <string name="pd_create_accnt_txt">Create a new account to make your booking easier</string>
+    <string name="pd_or">or</string>
+    <string name="pd_hint_f_name">First Name*</string>
+    <string name="pd_hint_l_name">Last Name*</string>
+    <string name="pd_code">Code</string>
+    <string name="pd_hint_address">Address*</string>
+    <string name="pd_hint_address_2">Address 2</string>
+    <string name="pd_hint_city">City*</string>
+    <string name="pd_hint_country">Country*</string>
+
+    <string name="pd_edt_ph_no">Mobile Number</string>
+    <string name="pd_hint_birth_date">Birth Date*</string>
+    <string name="pd_hint_ic_no">IC No/Passport No</string>
+
+    <string name="pd_txt_enter_email">Enter your email address below</string>
+    <string name="pd_reset_pswd">Reset Password</string>
+
+    <string name="pd_change_pswd">Change Password</string>
+    <string name="pd_hint_new_pswd">New Password*</string>
+    <string name="pd_hint_confrim_pswd">Confrim Password*</string>
+
+    <string name="pd_enter_code">Enter Code</string>
+    <string name="pd_enter_code_descpription">Enter your forgot key below</string>
+    <string name="pd_mtrl_btn_verify">Verify</string>
+
+    <string name="pd_world_tour">Upcoming World Tour</string>
+    <string name="pd_txt_view_pager_1">World Tour</string>
+    <string name="pd_txt_view_pager_2">Chris Leong</string>
+    <string name="pd_txt_view_pager_3">Jan 10-Feb 14</string>
+    <string name="pd_btn_book_now">Book now</string>
+
+    <string-array name="pd_therapist_list">
+        <item>Chris Leong</item>
+        <item>Edwin Moss</item>
+        <item>Hunter Meron</item>
+        <item>Jay Bryan</item>
+        <item>Jose Holt</item>
+        <item>Jesus Rice</item>
+    </string-array>
+
+    <string-array name="pd_therapist_time_peroid">
+        <item>Jan 10-Feb 14</item>
+        <item>Feb 15-Mar 09</item>
+        <item>Mar 10-Apr 14</item>
+        <item>Apr 15-May 09</item>
+        <item>May 10-Jun 14</item>
+        <item>Jun 15-Jul 09</item>
+
+    </string-array>
+
+    <string name="pd_txt_therapist_name">Chris Leong World Tour</string>
+    <string name="pd_txt_chris_leong">Chris Leong</string>
+    <string name="pd_txt_all">All</string>
+    <string name="pd_txt_other">Other Therapist</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="pd_txt_city_1">Mid\nValley</string>
+    <string name="pd_txt_city_2">Setia\nAlarm</string>
+    <string name="pd_txt_city_3">Sri\nPetaling</string>
+    <string name="pd_txt_city_4">Sunway\nDamansara</string>
+    <string name="pd_txt_city_5">MCL Mid\nValley</string>
+    <string name="pd_txt_city_6">Setia\nAlarm</string>
+    <string name="pd_txt_city_7">Sunway\nDamansara</string>
+    <string name="pd_txt_city_8">Sri\nPetaling</string>
+
+    <string name="pd_txt_therapist_1">Chris Leong</string>
+    <string name="pd_txt_therapist_2">Edwin Moss</string>
+    <string name="pd_txt_therapist_3">Hunter Meron</string>
+    <string name="pd_txt_therapist_4">Jay Bryan</string>
+    <string name="pd_txt_therapist_5">Jose Holt</string>
+    <string name="pd_txt_therapist_6">Jesus Rice</string>
+    <string name="pd_txt_therapist_7">Chris Leong</string>
+    <string name="pd_txt_therapist_8">Edwin Moss</string>
+
+    <string name="pd_txt_detail_2">Chiroprector</string>
+    <string name="pd_txt_detail_3">Patient</string>
+    <string name="pd_txt_detail_4">2000+</string>
+    <string name="pd_txt_detail_5">Experience</string>
+    <string name="pd_txt_detail_6">15 years</string>
+    <string name="pd_txt_detail_7">Age</string>
+    <string name="pd_txt_detail_8">40 years</string>
+    <string name="pd_btn_book_schedule_now">Book Schedule Now</string>
+
+    <string name="pd_title_date">Date</string>
+    <string name="pd_title_time">Time</string>
+    <string name="pd_title_amnt">Amount</string>
+    <string name="pd_title_country">Country</string>
+    <string name="pd_title_city">City</string>
+    <string name="pd_title_Address">Address</string>
+
+    <string name="pd_btn_direction">Direction</string>
+    <string name="pd_btn_reschedule">Reschedule</string>
+    <string name="pd_btn_share_qr">Share QR</string>
+
+    <string name="pd_new_group">New Group</string>
+    <string name="pd_find_people_neary">Find people Nearby</string>
+    <string name="pd_new_channel">New Channel</string>
+    <string name="pd_new_secret_chat">New Secret Chat</string>
+    <string name="pd_contacts">Contacts</string>
+    <string name="pd_call">Call</string>
+    <string name="pd_people_nearby">People Nearby</string>
+    <string name="pd_save_messages">Save Messages</string>
+    <string name="pd_add_friends">Add Friend</string>
+    <string name="pd_type_message">Message</string>
+    <string name="pd_retrieve">Retrieve</string>
+    <string name="pd_title_question">Question</string>
+    <string name="pd_success">Success</string>
+    <string name="pd_got_it">Got it!</string>
+    <string name="pd_try_again">Try Again</string>
+    <string name="pd_whoops">Whoops!</string>
+    <string name="pd_title_ans_question">Answer options</string>
+    <string name="pd_title_option">Option</string>
+    <string name="pd_create_question">Create</string>
+    <string name="pd_ask_question">Ask a question</string>
+    <string name="pd_add_option">Add an Option...</string>
+    <string name="pd_hint_create_group">Enter group name</string>
+    <string name="pd_create_group">New Group</string>
+    <string name="pd_view_result">View Result</string>
+    <string name="pd_hint_option">You can add 6 more options</string>
+    <string name="pd_message">Message</string>
+    <string name="pd_accept">Accept</string>
+    <string name="pd_reject">Reject</string>
+    <string name="pd_our_therapist">Our Therapist</string>
+    <string name="pd_contact_us">Contact with us</string>
+    <string name="pd_setting">Setting</string>
+    <string name="pd_invite_friends">Invite Friends</string>
+    <string name="pd_clear_all_chat">Delete all chat</string>
+    <string name="pd_feature">Features</string>
+    <string name="pd_user_name">Shamsul Alam</string>
+
+    <string name="pd_txt_book_outlet_2">Mid Valley Boulevard</string>
+    <string name="pd_txt_book_outlet_4">Wed 14 Aug 2020</string>
+    <string name="pd_txt_book_outlet_5">Booking Fee(Par pax)</string>
+    <string name="pd_txt_book_outlet_6">MYR 30</string>
+    <string name="pd_txt_book_outlet_7">Select session</string>
+
+    <string name="pd_txt_booking_details_2">Name</string>
+    <string name="pd_txt_booking_details_3">John Smith</string>
+    <string name="pd_txt_booking_details_4">Booking ID</string>
+    <string name="pd_txt_booking_details_5">WTS0012</string>
+    <string name="pd_txt_booking_details_8">Time</string>
+    <string name="pd_txt_booking_details_9">10:30 AM</string>
+    <string name="pd_txt_booking_details_10">Amount</string>
+    <string name="pd_txt_booking_details_13">New Zealand</string>
+    <string name="pd_txt_booking_details_15">Auckland</string>
+
+
+    <string name="pd_txt_my_profile_2">Member ID:</string>
+    <string name="pd_txt_my_profile_3">MTS0012</string>
+    <string name="pd_txt_my_profile_4">Email</string>
+    <string name="pd_txt_my_profile_5">uiurtle.pro@gmail.com</string>
+
+
+    <string name="pd_open">"Open"</string>
+    <string name="pd_close">"Close"</string>
+
+    <string name="pd_txt_profile_1">My Booking</string>
+    <string name="pd_txt_profile_2">Booking History</string>
+    <string name="pd_txt_profile_3">Notification</string>
+    <string name="pd_txt_profile_4">Support</string>
+    <string name="pd_txt_profile_5">Change Password</string>
+    <string name="pd_txt_profile_6">Change Language</string>
+    <string name="pd_btn_txt_logout_profile">Logout</string>
+
+    <string name="pd_btn_txt_save_profile">Save</string>
+
+    <string name="pd_btn_insta">Instagram</string>
+    <string name="pd_btn_fb">Facebook</string>
+    <string name="pd_btn_waze">Waze</string>
+    <string name="pd_txt_address">CLM Sunway Damansara</string>
+    <string name="pd_txt_address2">218 Lakin Stravenue Suite 320</string>
+    <string name="pd_txt_mobile_no">+ 6014-4523 2345</string>
+    <string name="pd_txt_email_id">abc.xyz@gmail.com</string>
+    <string name="pd_txt_register_account_success">Your account has been created</string>
+    <string name="pd_txt_sent_new_password_to_email">Your new password has been sent via email</string>
+    <string name="pd_txt_input_email">Please input Email</string>
+    <string name="pd_txt_input_full_name">Please input Full name</string>
+    <string name="pd_txt_input_channel_name">Please input channel name</string>
+    <string name="pd_txt_input_confirm_password">Please input confirm password</string>
+    <string name="pd_txt_input_password_no_match">Password is no match</string>
+    <string name="pd_txt_input_password">Please input Password</string>
+    <string name="pd_txt_input_group_name">Please input group name</string>
+    <string name="pd_btn_txt_emargency_support">Emergency Support"</string>
+
+    <string name="pd_txt_faq_1">Is refund for master Chris World Tour or Master Chris outlet refundable?</string>
+    <string name="pd_txt_faq_2">If i which o cancel my booking.do I get to refund?</string>
+    <string name="pd_txt_faq_3">The different type of Laser Eye Surgery</string>
+    <string name="pd_txt_faq_4">Could those Creepy Crawly Nighttime Leg Sensations Be A Treatable Medical Condition </string>
+    <string name="pd_txt_faq_5">The Advantage Of Minimal Repair Technique In the treatment For Hernia </string>
+
+    <string name="pd_term_condtion">If your city is not on World Tour List.you can still enjoy this Tarditional muscle and joint relief tchnique by suggest for your city.Share with your friends on social media to nominate the city of your choice.
+    \n\nOnce we have enough nomination.We will schedule in your city for our future trips! just fill in the form to vote your city and get more people in your city to do the same.\n\nIf your city is not on World Tour List.you can still enjoy this Tarditional muscle and joint relief tchnique by suggest for your city.Share with your friends on social media to nominate the city of your choice.Once we have enough nomination.We will schedule in your city for our future trips! just fill in the form to vote your city and get more people in your city to do the same.
+    </string>
+
+    <string name="pd_today">Today</string>
+    <string name="pd_clear">Clear</string>
+    <string name="pd_earlier">Earlier</string>
+
+    <string name="pd_txt_notification_dscp_1">Master Chris World Tour booking confrimed"</string>
+    <string name="pd_txt_notification_dscp_2">You have 1 schedule tommorow.\nSee you tommorow</string>
+    <string name="pd_txt_notification_time_1">2 hours ago</string>
+    <string name="pd_txt_notification_time_2">3 hours ago</string>
+
+    <string name="pd_txt_suggest_city_1">If your city is not on World Tour List.you can still enjoy this Tarditional muscle and joint relief tchnique by suggest for your city.Share with your friends on social media to nominate the city of your choice.
+    \n\nOnce we have enough nomination.We will schedule in your city for our future trips! just fill in the form to vote your city and get more people in your city to do the same.</string>
+
+    <string name="pd_txt_fill_info">Fillup your information</string>
+    <string name="pd_btn_submit">Submit</string>
+
+    <string name="pd_txt_booking_confirm_1">Booking is Confirmed!</string>
+    <string name="pd_txt_booking_confirm_2">Please complete the booking process.\nWe will update you soon!</string>
+    <string name="pd_btn_complete">Complete</string>
+
+
+    <string name="pd_font_bold">Pd_fonts/GoogleSans-Bold.ttf</string>
+    <string name="pd_font_medium">Pd_fonts/GoogleSans-Medium.ttf</string>
+    <string name="pd_font_regular">Pd_fonts/GoogleSans-Regular.ttf</string>
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <!-- Message Page-->
+    <string name="message_hint_input">Input message</string>
+    <string name="message_numbers">Members:</string>
+    <string name="read_more">Show more</string>
+    <string name="read_less">Show less</string>
+    <string name="btn_record_done">Done</string>
+
+    <string name="theme1_lbl_sign_in_header">Sign In/</string>
+    <string name="theme1_lbl_sign_up_header">Sign Up/</string>
+    <string name="theme1_lbl_sign_up">Sign Up</string>
+    <string name="theme1_lbl_sign_in">Sign In</string>
+    <string name="theme1_lbl_reset">Reset Password</string>>
+    <string name="theme1_hint_password">Password</string>
+    <string name="theme1_hint_userName">Code No</string>
+    <string name="theme1_lbl_remember">Remember</string>
+    <string name="theme1_lbl_forgot_password"><a href="#">Forgot Password?</a></string>
+    <string name="theme1_forgot_password">Forgot Password</string>
+    <string name="theme1_lbl_no_account">Don\'t have an account?</string>
+    <string name="theme1_lbl_have_account">Already have an account?</string>
+
+    <string name="message_menu_thread">Thread</string>
+    <string name="message_menu_quote">Quote</string>
+    <string name="message_menu_notification">Notification</string>
+    <string name="message_menu_task">Task</string>
+    <string name="message_menu_pin">Pin</string>
+    <string name="message_menu_edit">Edit</string>
+    <string name="message_menu_delete">Delete</string>
+    <string name="message_menu_copy">Copy</string>
+    <string name="message_menu_reply">Reply</string>
+    <string name="message_menu_fwt">Forward</string>
+
+    <string name="dialog_confirm_block_user">Are you sure you want to block this user?</string>
+    <string name="dialog_confirm_unblock_user">Are you sure you want to unblock this user?</string>
+    <string name="dialog_confirm_delete_channel">Are you sure you want to delete this channel?</string>
+    <string name="dialog_confirm_leave_channel">Are you sure you want to leave this channel?</string>
+    <string name="dialog_confirm_delete_message">Are you sure you want to delete this message?</string>
+    <string name="dialog_confirm_friend_request">%1$s send you a friend request</string>
+    <string name="dialog_confirm_delete_friend_request">Are you sure you want to delete friend request?</string>
+    <string name="dialog_confirm_channel_request">%1$s send you a channel request</string>
+    <string name="dialog_confirm_edit_message">You can not edit this message</string>
+    <string name="dialog_confirm_ok">Ok</string>
+    <string name="dialog_confirm_cancel">Cancel</string>
+    <string name="tv_no_empty_friend_request">You have nothing friend request</string>
+    <string name="tv_no_empty_contact">You have nothing contacts</string>
+    <string name="tv_no_empty_sewarch">No search result</string>
+    <string name="tv_no_empty_chat">You have nothing chats</string>
+    <string name="tv_sent_friend_request">Sent friend request</string>
+
+</resources>

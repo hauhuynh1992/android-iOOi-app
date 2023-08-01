@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/social_colorPrimaryDark"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/social_colorPrimary"
+        app:title="@string/social_lbl_edit_name"
+        app:titleTextColor="@color/social_white" />
+
+
+    <EditText
+        android:id="@+id/edtName"
+        style="@style/Theme1EditTextStyle_rounded"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:hint="@string/pd_txt_input_full_name"
+        android:inputType="text" />
+
+    <RelativeLayout
+        android:id="@+id/btnActionClock"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/bg_green_cirle"
+        android:backgroundTint="@color/social_white"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_lock"
+            app:tint="@color/social_black" />
+    </RelativeLayout>
+
+</RelativeLayout>

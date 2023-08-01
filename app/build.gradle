@@ -1,0 +1,106 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+def localProperties = new Properties()
+localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "30.0.3"
+
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+            res.srcDirs = ['src/main/res', 'src/main/res/drawable']
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.phillip.chapApp"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file('keystores/crayon-release.jks')
+            storePassword 'hauhuynh1805'
+            keyAlias 'key'
+            keyPassword 'hauhuynh1805'
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField("String", "baseUrl", "\"" + localProperties['HOST_URL_DEV'] + "\"")
+        }
+
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "baseUrl", "\"" + localProperties['HOST_URL'] + "\"")
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.1.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.google.android.material:material:1.0.0-alpha3'
+    implementation ('io.socket:socket.io-client:2.0.0') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+
+    implementation 'io.github.inflationx:calligraphy3:3.1.1'
+    implementation 'io.github.inflationx:viewpump:2.0.3'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.hbb20:ccp:2.2.9'
+    implementation("com.github.bumptech.glide:glide:4.11.0")
+    kapt("com.github.bumptech.glide:compiler:4.11.0")
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.17'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.1'
+    implementation("com.squareup.okhttp3:okhttp:3.12.1") {
+        force = true //API 19 support
+    }
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    implementation 'androidx.work:work-runtime-ktx:2.5.0'
+
+}

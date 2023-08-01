@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/Social_spacing_standard"
+    android:background="@drawable/social_bottom_shadow">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/_34sdp"
+        android:layout_height="@dimen/_34sdp"
+        android:src="@drawable/social_ic_keyboard_arrow_left"
+        android:layout_marginBottom="@dimen/Social_spacing_middle"
+        android:layout_marginStart="@dimen/Social_spacing_standard_new"
+        android:padding="@dimen/Social_spacing_control"
+        android:background="@drawable/social_bg_primary_corner"
+        app:tint="@color/social_white" />
+
+<!--    <TextView-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/social_lbl_settings"-->
+<!--        android:textAppearance="@style/SocialFontMedium"-->
+<!--        android:textColor="@color/social_textColorPrimary"-->
+<!--        android:textSize="@dimen/Social_font_size_large" />-->
+</RelativeLayout>

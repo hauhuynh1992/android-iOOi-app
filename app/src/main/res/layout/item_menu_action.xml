@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_6sdp">
+
+    <RelativeLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/bg_menu_gallery">
+
+        <RelativeLayout
+            android:id="@+id/ll_select"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_menu_selected"
+            android:visibility="visible">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_communication"
+            app:tint="@color/social_white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_bg"
+        android:layout_centerHorizontal="true"
+        android:text="Gallery"
+        android:textColor="@color/social_colorPrimary"
+        android:textSize="@dimen/Social_font_size_micro"
+        android:textStyle="bold" />
+
+</RelativeLayout>
